@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+<head>
+    <!--meta-->
+    <meta charset="UTF-8">
+    <meta name="description" content="portfolio kareem elsayed ibrahem">
+    <meta name="keywords" content="portfolio,kareem,kareem lashin,front-end,Ui developer">
+    <meta name="author" content="Kareem Elsayed Ibrahem">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+    <!--css style-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--web site title-->
+    <title>Doctor app</title>
+    <!--favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+
+</head>
+
+<body>
+    <div class="drop-down-notification px-3 py-2">
+        <div class="item-notification bg-white border my-2 py-2">
+            <div class="row ">
+                <div class="col-2 d-flex  align-items-center">
+                    <i class="fas fa-book "></i>
+                </div>
+                <div class="col-10">
+                    <p>Agenda</p>
+                    <p>
+                        sit amet consectetur adipisicing elit. Ad laudantium neque temporibus itaque
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="item-notification bg-white border my-2 py-2">
+            <div class="row  ">
+                <div class="col-2 d-flex  align-items-center">
+                    <i class="fas fa-book "></i>
+                </div>
+                <div class="col-10">
+                    <p>Agenda</p>
+                    <p>
+                        sit amet consectetur adipisicing elit. Ad laudantium neque temporibus itaque
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="item-notification bg-white border my-2 py-2">
+            <div class="row  ">
+                <div class="col-2 d-flex  align-items-center">
+                    <i class="fas fa-book "></i>
+                </div>
+                <div class="col-10">
+                    <p>Agenda</p>
+                    <p>
+                        sit amet consectetur adipisicing elit. Ad laudantium neque temporibus itaque
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-notification bg-white border my-2 py-2">
+            <div class="row ">
+                <div class="col-2 d-flex  align-items-center">
+                    <i class="fas fa-book "></i>
+                </div>
+                <div class="col-10">
+                    <p>Agenda</p>
+                    <p>
+                        sit amet consectetur adipisicing elit. Ad laudantium neque temporibus itaque
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="drop-down-setting p-2">
+        <ul>
+            <li>
+                <a href="">
+                    <i class="fas fa-sign-out-alt px-2"></i>log out
+                </a>
+            </li>
+            <li><a href="edit profile.html"><i class="fas fa-user-edit px-2"></i>Edit Profile</a></li>
+            <li><a href=""><i class="fas fa-sliders-h px-2"></i>Setting</a></li>
+        </ul>
+    </div>
+
+    <div class="topNav  fixed-top p-2">
+        <div class="container login-nav">
+            <i class="fas fa-bars pt-1" id="bars"></i>
+
+            <i class="fas fa-bell" id="notification"><span>7</span></i>
+            <i class="fas fa-sort-down px-3" id="setting"></i>
+        </div>
+    </div>
+    <div class="clearfix px-5" id="mainPage">
+     <nav>
+          <div class="side-nav pt-4">
+              <div class="container">
+                  <div class="row title-doctor">
+                      <div class="col-3 "><img src="img/1.jpeg" class="img-logo rounded-circle " alt="" srcset=""></div>
+                      <div class="col-9 drName px-2">Dr.Name doctor</div>
+                  </div>
+              </div>
+              <div>
+                  <div class="nav-links pt-2">
+                      <ul>
+                          <li><a href="index.html"><i class="fas fa-home px-3"></i> HOME</a></li>
+                          <li><a href="agenda.html"><i class="fas fa-book px-3"></i>Agenda</a></li>
+                          <li class="notafaction-item"><a href="Reservation.html"><i class="fas fa-calendar-week px-3"></i>Reservations</a>     
+                                   <div class="notafaction">2</div>
+                          </li>
+                          <li class="p-0 activeLink notafaction-item"><a href="inbox.html"><i class="far fa-comment-dots px-3"></i> inbox</a>           
+                             <div class="notafaction">2</div>
+                          </li>
+                          <li><a href="wallet.html"><i class="fas fa-wallet px-3"></i> My wallet</a></li>
+                      </ul>
+                  </div>
+                  <div>
+                      <button class="my-3 py-2 rounded-pill button-add" id="AddAvailableAppointment">Add Available
+                          Appointment</button> </div>
+                  <div class="">
+                      <h6>Your Wallet</h6>
+                      <div class="Wallet-nav bg-white shadow w-75 p-3">
+                          <h5> My Credit</h5>
+                          <p>1220 EGP</p>
+                          <h5>Dye by</h5>
+                          <p>11/1/2101</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </nav>
+        <main>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-7">
+                         <div class="row">
+                              <div class="col-7">
+                                  <h6>Your Reservation</h6>
+                      
+                              </div>
+                              <div class="col-5 Reservation" id="Reservation">
+                                  <ul class="mt-2 mx-auto" >
+                                      <li class="text-center" id="down-past"> Past<i class="fas fa-chevron-down px-2"></i></li>
+                                      <li class="py-1 slide-down px-5 text-center">
+                                          <a href="Reservation-ar.html" class="mx-auto">
+                                                          Upcoming</a>
+                                      </li>
+                      
+                                  </ul>
+                              </div>
+                          </div>
+                        <div class="row pt-2 pl-3">
+                            <!--rtl-->
+                            <h6>
+                                <i class="fa fa-circle pr-2"></i>Yesterday
+                            </h6>
+                            <div class="col-md-12  my-2">
+                                4:20pm
+                                <div class="row item-Reservation bg-white shadow py-2 ">
+                                    <div class="col-3 pr-0">
+                                        <img src="img/3.jpg" class=" img-logo4 rounded-circle" alt="">
+                                   </div>
+                                    <div class="col-4 d-flex align-items-center px-0">
+                                        <span class="px-1">kareem lashin</span>
+                                    </div>
+                                    <div class="col-5 px-0 d-flex align-items-center justify-content-end px-0">
+                                        <button class="py-2 text-center  Add-Map">Add red Map</button>
+                                        <button class="bg-white shadow py-2 text-center
+                                         rate rate-box-item mx-2">Rate</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="my-4">
+                                <i class="fa fa-circle pr-2"></i>12,Dec,2019
+                            </h6>
+                            <div class="col-md-12  my-2">
+                                4:20pm
+                                <div class="row item-Reservation bg-white shadow py-2 ">
+                                    <div class="col-3 pr-0">
+                                        <img src="img/5.jpg" class=" img-logo4 rounded-circle" alt="">
+                                   </div>
+                                    <div class="col-4 d-flex align-items-center px-0">
+                                        <span class="px-1">kareem lashin</span>
+                                    </div>
+                                    <div class="col-5 px-0 d-flex align-items-center justify-content-end px-0">
+                                        <button class="text-center  Add-Map">Add red Map</button>
+                                        <button class="bg-white shadow py-2
+                                             text-center rate rate-box-item mx-2">rate</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="my-4">
+                                <i class="fa fa-circle pr-2"></i>12,Dec,2019
+                            </h6>
+                            <div class="col-md-12  my-2">
+                                4:20pm
+                                <div class="row item-Reservation bg-white shadow py-2 ">
+                                    <div class="col-3 pr-0">
+                                        <img src="img/6.jpg" class=" img-logo4 rounded-circle" alt="">
+                                   </div>
+                                    <div class="col-4 d-flex align-items-center px-0">
+                                        <span class="px-1">kareem lashin</span>
+                                    </div>
+                                    <div class="col-5 px-0 d-flex align-items-center justify-content-end px-0">
+                                        <button class="bg-white shadow py-2 text-center view-reb">View Red Map</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12  my-2">
+                                4:20pm
+                                <div class="row item-Reservation bg-white shadow py-2 ">
+                                    <div class="col-3 pr-0">
+                                        <img src="img/5.jpg" class=" img-logo4 rounded-circle" alt="">
+                                   </div>
+                                    <div class="col-4 d-flex align-items-center px-0">
+                                        <span class="px-1">kareem lashin</span>
+                                    </div>
+                                    <div class="col-5 px-0 d-flex align-items-center justify-content-end px-0">
+                                        <button class="bg-white shadow py-2 text-center view-reb">View Red Map</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="my-4">
+                                <i class="fa fa-circle pr-2"></i>12,Dec,2019
+                            </h6>
+                            <div class="col-md-12  my-2">
+                                4:20pm
+                                <div class="row item-Reservation bg-white shadow py-2 ">
+                                    <div class="col-3 pr-0">
+                                        <img src="img/7.jpg" class=" img-logo4 rounded-circle" alt="">
+                                   </div>
+                                    <div class="col-4 d-flex align-items-center px-0">
+                                        <span class="px-1">kareem lashin</span>
+                                    </div>
+                                    <div class="col-5 px-0 d-flex align-items-center justify-content-end px-0">
+                                        <button class="bg-white shadow py-2 text-center view-reb">View Red Map</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 chat-media">
+                         <h6>
+                              Your recent chat <span class="getEnd" ><a href="inbox.html">See ALL</a></span></h6>
+                          <div class="recent-chat my-3 p-2  bg-white shadow ">
+                              <div class="container">
+                                  <div class="row">
+                                      <div class="col-2 p-0"><img src="img/1.jpeg " class="img-logo3 rounded-circle" alt="" srcset="">
+                                      </div>
+                                      <div class="col-10 pl-2 pt-2">
+                                          <h6>Kareem lshin</h6>
+                                          <p>thank you</p>
+                                          <div class="time">
+                                              4:30 Am
+                                          </div>
+                                          <div class="state-show">
+                                              <i class="fas fa-lock"></i>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="countNotification rounded-circle">
+                                  10
+                              </div>
+                          </div>
+                          
+                          <div class="recent-chat my-3 p-2  bg-white shadow ">
+                              <div class="container">
+                                  <div class="row">
+                                      <div class="col-2 p-0"><img src="img/1.jpeg " class="img-logo3 rounded-circle" alt="" srcset="">
+                                      </div>
+                                      <div class="col-10 pl-2 pt-2">
+                                          <h6>Kareem lshin</h6>
+                                          <p>thank you</p>
+                                          <div class="time">
+                                              4:30 Am
+                                          </div>
+                                          <div class="state-show">
+                                              <i class="fas fa-lock"></i>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="countNotification rounded-circle">
+                                  10
+                              </div>
+                          </div>
+                          
+                          <div class="recent-chat my-3 p-2  bg-white shadow ">
+                              <div class="container">
+                                  <div class="row">
+                                      <div class="col-2 p-0"><img src="img/1.jpeg " class="img-logo3 rounded-circle" alt="" srcset="">
+                                      </div>
+                                      <div class="col-10 pl-2 pt-2">
+                                          <h6>Kareem lshin</h6>
+                                          <p>thank you</p>
+                                          <div class="time">
+                                              4:30 Am
+                                          </div>
+                                          <div class="state-show">
+                                              <i class="fas fa-lock"></i>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="countNotification rounded-circle">
+                                  10
+                              </div>
+                          </div>
+                          <h6 class="mt-4">
+                              Your recent Reservation <span class="getEnd" ><a href="Reservation.html">See ALL</a></span></h6>
+                          <div class="col-md-12  my-2">
+                              <div class="row item-Reservation bg-white shadow py-2 ">
+                                  <div class="col-3 pr-0">
+                                      <img src="img/1.jpeg " class=" img-logo2 rounded-circle" alt="">
+                                  </div>
+                                  <div class="col-4 d-flex align-items-center px-0">
+                                      <span class="px-1">kareem lashin</span>
+                                  </div>
+                                  <div class="col-5 px-0 d-flex align-items-center justify-content-end px-0">
+                                      <button class="py-1 text-center call call-future"><i
+                                                  class="fas fa-video "></i>call</button>
+                                      <button class="bg-white shadow py-1 text-center cancel cancel-box-item"><i
+                                                  class="fas fa-times  "></i>cancel</button>
+                                  </div>
+                                  <div class="time time-Reservation">
+                                      4:30 Am
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-12  my-2">
+                              <div class="row item-Reservation bg-white shadow py-2 ">
+                                  <div class="col-3 pr-0">
+                                      <img src="img/1.jpeg " class=" img-logo2 rounded-circle" alt="">
+                                  </div>
+                                  <div class="col-4 d-flex align-items-center px-0">
+                                      <span class="px-1">kareem lashin</span>
+                                  </div>
+                                  <div class="col-5 px-0 d-flex align-items-center justify-content-end px-0">
+                                      <button class="py-1 text-center call call-future"><i
+                                              class="fas fa-video "></i>call</button>
+                                      <button class="bg-white shadow py-1 text-center cancel cancel-box-item"><i
+                                              class="fas fa-times  "></i>cancel</button>
+                                  </div>
+                                  <div class="time time-Reservation">
+                                      4:30 Am
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-12  my-2">
+                              <div class="row item-Reservation bg-white shadow py-2 ">
+                                  <div class="col-3 pr-0">
+                                      <img src="img/1.jpeg " class=" img-logo2 rounded-circle" alt="">
+                                  </div>
+                                  <div class="col-4 d-flex align-items-center px-0">
+                                      <span class="px-1">kareem lashin</span>
+                                  </div>
+                                  <div class="col-5 px-0 d-flex align-items-center justify-content-end px-0">
+                          
+                                      <button class="py-1 text-center call call-tody ">
+                                                  <a href="video.html">
+                                                      <i
+                                                      class="fas fa-video "></i>call
+                                                  </a>
+                                              </button>
+                                      <button class="bg-white shadow py-1 text-center cancel cancel-box-item"><i
+                                              class="fas fa-times"></i>cancel</button>
+                                  </div>
+                                  <div class="time time-Reservation">
+                                      4:30 Am
+                                  </div>
+                              </div>
+                          </div>
+                          <div id="box-closeReservations">
+                              <i class="fas fa-times buttonClose" id="boxCloseReservations"></i>
+                          
+                              <div class="box-close">
+                                  <div class="title-close">
+                                      <h6 class="px-2 py-3"> Cancel Reservations?</h6>
+                                  </div>
+                                  <p class="px-2 py-1">Are you sure want to cancel this Reservations?</p>
+                                  <div class="text-right">
+                                      <button id="sureCancel" class=" my-3 p-1">Yes,cancel</button>
+                                      <button id="backReservations" class=" my-3 mx-2 px-3 py-1">back</button>
+                                  </div>
+                              </div>
+                          </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="back-rate">
+        <div class="box-rate">
+            <p class="pt-2 mb-5 text-center">How Was Your Session?</p>
+            <div class="rate-icon container position-relative">
+
+                <div class="row ">
+                    <div class="col-3 mx-auto  rate-chose position-relative" id="rate-chose-bad">
+                        <div class="bad  py-3 rate-chose-item mx-auto rounded-circle bg-white shadow">
+                            <i class="far fa-frown"></i>
+                        </div>
+                        <p class="text-center my-2">Bad</p>
+
+                    </div>
+                    <div class="col-3 mx-auto  rate-chose " id="rate-chose-fine">
+                        <div class="fine rate-chose-item py-3 rate-active mx-auto   rounded-circle bg-white shadow ">
+                            <i class="far fa-meh"></i>
+                        </div>
+                        <p class="text-center my-2">fine</p>
+
+                    </div>
+                    <div class="col-3 mx-auto rate-chose " id="rate-chose-good">
+                        <div class="good rate-chose-item  py-3 mx-auto  rounded-circle bg-white shadow">
+                            <i class="far fa-smile"></i>
+                        </div>
+                        <p class="text-center my-2">good</p>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 descriptionChose" id="rate-chose-bad-description">
+                        <p class="text-center">Thanks Your Feedback</p>
+                        <div class="row mt-3 mb-5">
+                            <div class="col-6">
+                                <div class="inputGroup">
+                                    <input id="badChoseOne" name="bad" type="radio">
+                                    <label for="badChoseOne" class="pt-4">Slow response</label>
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="inputGroup">
+                                    <input id="badChoseTwo" type="radio" name="bad" />
+                                    <label for="badChoseTwo" class="pt-4">Patient is unfriendly</label>
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="inputGroup">
+                                    <input id="badChoseThree" name="bad" type="radio" />
+                                    <label for="badChoseThree" class="pt-4">Bad connection</label>
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="inputGroup">
+                                    <input id="badChoseFour" name="bad" type="radio" />
+                                    <label for="badChoseFour" class="pt-4">Other reason</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <textarea rows="5" class="w-100" cols="" placeholder="Message"></textarea>
+                        </div>
+                        <div class="text-center">
+
+                            <button class="submit py-2 rounded-pill my-3 px-3">SUBMITE</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 descriptionChose" id="rate-chose-fine-description">
+                        <p class="text-center py-2">Thanks Your Feedback</p>
+
+                        <div class="px-3">
+                            <textarea rows="5" class="w-100" cols="" placeholder="Message"></textarea>
+                        </div>
+                        <div class="text-center">
+
+                            <button class="submit py-2 rounded-pill my-3 px-3">SUBMITE</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 descriptionChose" id="rate-chose-good-description">
+                        <p class="text-center">Thanks Your Feedback</p>
+                        <div class="text-center">
+                            <button class="submit py-2 rounded-pill my-3 px-3">SUBMITE</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/jquery-3-4-1-min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

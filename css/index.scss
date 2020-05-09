@@ -1,0 +1,3705 @@
+$backGroundColor:#f8fafa;
+$mainColor:#309ead;
+$colorFonts:#c1c3c2;
+$notificationColor:#f7848e;
+body {
+    background-color: $backGroundColor;
+    font-family: 'Cairo', 'sans-serif';
+}
+
+@mixin border-radius-all($x) {
+    border-top-left-radius: $x;
+    border-top-right-radius: $x;
+    border-bottom-left-radius: $x;
+    border-bottom-right-radius: $x;
+}
+
+.drop-down-setting,
+.drop-down-notification {
+    position: fixed;
+    background-color: #edefef;
+    z-index: 99999999999 !important;
+    @include border-radius-all(10px);
+    display: none;
+}
+
+.drop-down-setting {
+    width: 14%;
+    li {
+        a {
+            color: #000;
+            line-height: 30px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    }
+}
+
+.drop-down-notification {
+    width: 30%;
+    @include border-radius-all(10px);
+    .item-notification {
+        @include border-radius-all(10px);
+        color: #000;
+        i {
+            font-size: 30px;
+        }
+    }
+}
+
+
+/*
+*/
+
+@media (min-width:600px) and (max-width: 768px) {
+    .drop-down-setting {
+        width: 25%;
+    }
+    .drop-down-notification {
+        width: 50%;
+    }
+}
+
+@media (min-width:100px) and (max-width: 600px) {
+    .drop-down-setting {
+        width: 45%;
+    }
+    .drop-down-notification {
+        width: 80%;
+    }
+}
+
+[dir="ltr"] {
+     @media(min-width:767px)and(max-width:768px)
+{
+     .chat-media
+{
+     .item-Reservation
+     {
+          .col-3{
+            padding-left: 5px !important;
+          }
+     }
+}}
+     .bedge-date {
+          right: 3%;
+      }
+     .text-right {
+          text-align: right !important;
+      }
+     .box-option {
+          left: 40%;
+      }
+      @media (max-width:500px) {
+          .box-option {
+              left: 80%;
+          }
+      }
+      @media (max-width: 500px) {
+          .box-option {
+              left: 80%;
+          }
+      }
+     #time-video {
+         
+          right: 5px !important;
+      }
+     .getEnd {
+          float: right !important;
+      }
+     .notafaction-item {
+          .notafaction {
+              right: 0;
+          }
+      }
+     .state-show {
+          left: 95%;
+      }
+     @media(max-width: 700px){
+          .ntr-1
+          {
+               margin-right: 4px;
+     
+          }
+     }
+   
+     @media (min-width: 767px)and(max-width: 768px)
+     {
+          #items-button-chat
+          {
+              .col-1{
+                   
+                   margin-right: 8px;
+               }
+            
+             
+          }
+     }
+     .chose-select .select::after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 15px;
+    font-weight: 900;
+    content: '\f0dd';
+    position: absolute;
+    top: 0;
+    right: 10px !important;
+    padding: 0px 0px;
+    color: #309ead;
+    background: #fff;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+    -moz-transition: .25s all ease;
+    -ms-transition: .25s all ease;
+}
+     .pp-0
+     {
+          padding-left:0px !important;
+     }
+    .drop-down-notification {
+        .item-notification {
+            i {
+                padding-left: 13px !important;
+            }
+        }
+    }
+    * {
+        text-align: left;
+    }
+    #wallet .owl-prev {
+        left: -5%;
+    }
+    #wallet .owl-next {
+        left: 98% !important;
+    }
+    #Reservation {
+        .select::after {
+            right: 0;
+        }
+    }
+    #gender {
+        .select::after {
+            right: 0;
+        }
+    }
+    .field-icon {
+        float: right;
+        margin-right: 7px;
+    }
+    @media (min-width:100px) and (max-width: 767px) {
+        #wallet .owl-next {
+            left: 85% !important;
+        }
+    }
+    .edit-profile-doctor {
+        right: 5%;
+    }
+    #agenda-popup ul li i {
+        margin-right: 15px;
+    }
+    .pul {
+        float: right;
+    }
+    label[for=status-Reservation]::after {
+        right: -15px;
+    }
+    #agenda-popup .dots {
+        right: 3%;
+    }
+    .button-postion {
+        text-align: right;
+    }
+    label[for=hours-Available-Modify]::after,
+    label[for=hours-to-Modify]::after,
+    label[for=hours-Available-add]::after,
+    label[for=hours-to-add]::after {
+        right: -15px;
+    }
+    label[for=min-to-Modify]::after,
+    label[for=min-Available-Modify]::after,
+    label[for=min-to-add]::after,
+    label[for=min-Available-add]::after {
+        right: 10px;
+    }
+    @media (min-width:600px)and(max-width:767px) {
+        label[for=hours-Available-Modify]::after,
+        label[for=hours-to-Modify]::after,
+        label[for=hours-Available-add]::after,
+        label[for=hours-to-add]::after {
+            right: 72px;
+        }
+        label[for=min-to-Modify]::after,
+        label[for=min-Available-Modify]::after,
+        label[for=min-to-add]::after,
+        label[for=min-Available-add]::after {
+            right: 110px;
+        }
+    }
+    @media (min-width:581px)and(max-width:599px) {
+        label[for=hours-Available-Modify]::after,
+        label[for=hours-to-Modify]::after,
+        label[for=hours-Available-add]::after,
+        label[for=hours-to-add]::after {
+            right: 62px;
+        }
+        label[for=min-to-Modify]::after,
+        label[for=min-Available-Modify]::after,
+        label[for=min-to-add]::after,
+        label[for=min-Available-add]::after {
+            right: 94px;
+        }
+    }
+    @media(min-width:370px)and(max-width:400px) {
+        label[for=hours-Available-Modify]::after,
+        label[for=hours-to-Modify]::after,
+        label[for=hours-Available-add]::after,
+        label[for=hours-to-add]::after {
+            right: -5px;
+        }
+        label[for=min-to-Modify]::after,
+        label[for=min-Available-Modify]::after,
+        label[for=min-to-add]::after,
+        label[for=min-Available-add]::after {
+            right: 28px;
+        }
+    }
+    @media(min-width:550px)and(max-width:580px) {
+        label[for=hours-Available-Modify]::after,
+        label[for=hours-to-Modify]::after,
+        label[for=hours-Available-add]::after,
+        label[for=hours-to-add]::after {
+            right: 52px;
+        }
+        label[for=min-to-Modify]::after,
+        label[for=min-Available-Modify]::after,
+        label[for=min-to-add]::after,
+        label[for=min-Available-add]::after {
+            right: 85px;
+        }
+    }
+    @media(min-width:520px)and(max-width:549px) {
+        label[for=hours-Available-Modify]::after,
+        label[for=hours-to-Modify]::after,
+        label[for=hours-Available-add]::after,
+        label[for=hours-to-add]::after {
+            right: 40px;
+        }
+        label[for=min-to-Modify]::after,
+        label[for=min-Available-Modify]::after,
+        label[for=min-to-add]::after,
+        label[for=min-Available-add]::after {
+            right: 74px;
+        }
+    }
+    @media(min-width:410px)and(max-width:440px) {
+        label[for=hours-Available-Modify]::after,
+        label[for=hours-to-Modify]::after,
+        label[for=hours-Available-add]::after,
+        label[for=hours-to-add]::after {
+            right: 0px;
+        }
+        label[for=min-to-Modify]::after,
+        label[for=min-Available-Modify]::after,
+        label[for=min-to-add]::after,
+        label[for=min-Available-add]::after {
+            right: 30px;
+        }
+    }
+    @media(min-width:500px)and(max-width:519px) {
+        label[for=hours-Available-Modify]::after,
+        label[for=hours-to-Modify]::after,
+        label[for=hours-Available-add]::after,
+        label[for=hours-to-add]::after {
+            right: 25px;
+        }
+        label[for=min-to-Modify]::after,
+        label[for=min-Available-Modify]::after,
+        label[for=min-to-add]::after,
+        label[for=min-Available-add]::after {
+            right: 65px;
+        }
+    }
+    @media(min-width:441px)and(max-width:499px) {
+        label[for=hours-Available-Modify]::after,
+        label[for=hours-to-Modify]::after,
+        label[for=hours-Available-add]::after,
+        label[for=hours-to-add]::after {
+            right: 13px;
+        }
+        label[for=min-to-Modify]::after,
+        label[for=min-Available-Modify]::after,
+        label[for=min-to-add]::after,
+        label[for=min-Available-add]::after {
+            right: 50px;
+        }
+    }
+    .drop-down-agenda {
+        right: 3%;
+    }
+    .fa-bars {
+        float: left;
+        visibility: hidden;
+        opacity: 0;
+        color: #fff;
+    }
+    .drop-down-notification {
+        right: 7%;
+    }
+    .drop-down-setting {
+        right: 5%;
+    }
+    .bg-active ,.bg-UnActive {
+        img {
+            padding-left: 4px;
+        }
+    }
+    @media (max-width:1024px) {
+        .fa-bars {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    @media (max-width:1024px) {
+        nav {
+            left: -1000px;
+            padding-left: 10px;
+            background-color:#f8fafa !important;
+
+            .side-nav {
+               background-color:#f8fafa !important;
+
+                left: -1000px;
+                padding-left: 20px;
+            }
+        }
+    }
+    nav {
+        float: left;
+    }
+    main {
+        float: left;
+    }
+    .login-nav {
+        text-align: right;
+    }
+    .time {
+        right: 0px;
+    }
+    .countNotification {
+        left: -5px;
+    }
+  
+}
+
+.fa-bell {
+    font-size: 20px;
+    position: relative;
+    transform: rotate(15deg);
+    span {
+        background-color: #fff;
+        border-radius: 50%;
+        padding-top: 3px;
+        padding-left: 3px;
+        padding-right: 3px;
+        font-size: 12px;
+        position: absolute;
+        transform: rotate(345deg);
+        color: $mainColor;
+        top: 40%;
+        left: 70%;
+        border: 1px solid $mainColor;
+    }
+}
+
+.top-offset {
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background-color: rgba(0, 0, 0, 0.5);
+     z-index: 99;
+     display: none;
+ }
+/*
+
+
+
+
+
+
+rtl
+*/
+.bedge-date {
+     font-size: 10px;
+     position: absolute;
+     top: 5%;
+     color: #309ead;
+     padding-left: 4px;
+     padding-right: 4px;
+     background-color: #fff;
+     border-radius: 8px;
+     -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+     -ms-border-radius: 8px;
+     -o-border-radius: 8px;
+ }
+[dir="rtl"] {
+     .chat-media
+{
+     .item-Reservation
+     {
+          .col-3{
+            margin-right: 5px !important;
+          }
+     }
+}
+     @media(min-width:767px)and(max-width:768px)
+{
+     .chat-media
+{
+     .item-Reservation
+     {
+          .col-3{
+            margin-right: 0px !important;
+          }
+     }
+}
+     .chat-media
+{
+     .item-Reservation
+     {
+          .col-3{
+            padding-right: 5px !important;
+          }
+     }
+}}
+
+     .bg-active ,.bg-UnActive {
+          img {
+              padding-right: 4px;
+          }
+      }
+     .bedge-date {
+          left: 3%;
+      }
+     .text-right {
+          text-align: left !important;
+      }
+     .box-option {
+          right: 40%;
+      }
+      @media (max-width:500px) {
+          .box-option {
+              right: 80%;
+          }
+      }
+      @media (max-width: 500px) {
+          .box-option {
+               right: 80%;
+          }
+      }
+     
+     #time-video {
+         
+          left: 5px !important;
+      }
+     .getEnd {
+          float: left !important;
+      }
+     .notafaction-item {
+          .notafaction {
+              left: 0;
+          }
+      }
+     .state-show {
+          right: 95%;
+      }
+     @media(max-width: 700px){
+          .ntr-1
+          {
+               margin-left: 4px;
+     
+          }
+     }
+     @media (min-width: 767px)and(max-width: 768px)
+     {
+          #items-button-chat
+          {
+              .col-1{
+                   
+                   margin-left: 8px;
+               }
+            
+             
+          }
+     }
+     .chose-select .select::after {
+          font-family: "Font Awesome 5 Free";
+          font-size: 15px;
+          font-weight: 900;
+          content: '\f0dd';
+          position: absolute;
+          top: 0;
+          left: 10px !important;
+          padding: 0px 0px;
+          color: #309ead;
+          background: #fff;
+          cursor: pointer;
+          pointer-events: none;
+          -webkit-transition: .25s all ease;
+          -o-transition: .25s all ease;
+          transition: .25s all ease;
+      }
+     .pp-0
+     {
+          padding-right:0px !important;
+     }
+    * {
+        text-align: right;
+    }
+    #wallet .owl-prev {
+        right: -5%;
+    }
+    #Reservation {
+        .select::after {
+            left: 0;
+        }
+    }
+    .drop-down-notification {
+        .item-notification {
+            i {
+                padding-right: 13px !important;
+            }
+        }
+    }
+    #gender {
+        .select::after {
+            left: 0;
+        }
+    }
+    #wallet .owl-next {
+        right: 90%;
+    }
+    .field-icon {
+        float: left;
+        margin-left: 7px;
+    }
+    @media (min-width:100px) and (max-width: 767px) {
+        #wallet .owl-next {
+            right: 85% !important;
+        }
+    }
+    .edit-profile-doctor {
+        left: 5%;
+    }
+    .drop-down-agenda {
+        left: 3%;
+    }
+    .pul {
+        float: left;
+    }
+    label[for=status-Reservation]::after {
+        left: -15px;
+    }
+    label[for=status-Reservation]::after {
+        left: -15px;
+    }
+    .button-postion {
+        text-align: left;
+    }
+    #agenda-popup .dots {
+        left: 3%;
+    }
+    #agenda-popup ul li i {
+        margin-left: 15px;
+    }
+    label[for=hours-Available-Modify]::after,
+    label[for=hours-to-Modify]::after,
+    label[for=hours-Available-add]::after,
+    label[for=hours-to-add]::after {
+        left: -15px;
+    }
+    label[for=min-to-Modify]::after,
+    label[for=min-Available-Modify]::after,
+    label[for=min-to-add]::after,
+    label[for=min-Available-add]::after {
+        left: 15px;
+    }
+    label[for=hours-Available-Modify]::after,
+    label[for=hours-to-Modify]::after,
+    label[for=hours-Available-add]::after,
+    label[for=hours-to-add]::after {
+        left: -15px;
+    }
+    label[for=min-to-Modify]::after,
+    label[for=min-Available-Modify]::after,
+    label[for=min-to-add]::after,
+    label[for=min-Available-add]::after {
+        left: 10px;
+    }
+    @media (min-width:600px)and(max-width:767px) {
+        label[for=hours-Available-Modify]::after,
+        label[for=hours-to-Modify]::after,
+        label[for=hours-Available-add]::after,
+        label[for=hours-to-add]::after {
+            left: 72px;
+        }
+        label[for=min-to-Modify]::after,
+        label[for=min-Available-Modify]::after,
+        label[for=min-to-add]::after,
+        label[for=min-Available-add]::after {
+            left: 110px;
+        }
+    }
+    @media (min-width:581px)and(max-width:599px) {
+        label[for=hours-Available-Modify]::after,
+        label[for=hours-to-Modify]::after,
+        label[for=hours-Available-add]::after,
+        label[for=hours-to-add]::after {
+            left: 62px;
+        }
+        label[for=min-to-Modify]::after,
+        label[for=min-Available-Modify]::after,
+        label[for=min-to-add]::after,
+        label[for=min-Available-add]::after {
+            left: 94px;
+        }
+    }
+    @media(min-width:370px)and(max-width:400px) {
+        label[for=hours-Available-Modify]::after,
+        label[for=hours-to-Modify]::after,
+        label[for=hours-Available-add]::after,
+        label[for=hours-to-add]::after {
+            left: -5px;
+        }
+        label[for=min-to-Modify]::after,
+        label[for=min-Available-Modify]::after,
+        label[for=min-to-add]::after,
+        label[for=min-Available-add]::after {
+            left: 28px;
+        }
+    }
+    @media(min-width:550px)and(max-width:580px) {
+        label[for=hours-Available-Modify]::after,
+        label[for=hours-to-Modify]::after,
+        label[for=hours-Available-add]::after,
+        label[for=hours-to-add]::after {
+            left: 52px;
+        }
+        label[for=min-to-Modify]::after,
+        label[for=min-Available-Modify]::after,
+        label[for=min-to-add]::after,
+        label[for=min-Available-add]::after {
+            left: 85px;
+        }
+    }
+    @media(min-width:520px)and(max-width:549px) {
+        label[for=hours-Available-Modify]::after,
+        label[for=hours-to-Modify]::after,
+        label[for=hours-Available-add]::after,
+        label[for=hours-to-add]::after {
+            left: 40px;
+        }
+        label[for=min-to-Modify]::after,
+        label[for=min-Available-Modify]::after,
+        label[for=min-to-add]::after,
+        label[for=min-Available-add]::after {
+            left: 74px;
+        }
+    }
+    @media(min-width:410px)and(max-width:440px) {
+        label[for=hours-Available-Modify]::after,
+        label[for=hours-to-Modify]::after,
+        label[for=hours-Available-add]::after,
+        label[for=hours-to-add]::after {
+            left: 0px;
+        }
+        label[for=min-to-Modify]::after,
+        label[for=min-Available-Modify]::after,
+        label[for=min-to-add]::after,
+        label[for=min-Available-add]::after {
+            left: 30px;
+        }
+    }
+    @media(min-width:500px)and(max-width:519px) {
+        label[for=hours-Available-Modify]::after,
+        label[for=hours-to-Modify]::after,
+        label[for=hours-Available-add]::after,
+        label[for=hours-to-add]::after {
+            left: 25px;
+        }
+        label[for=min-to-Modify]::after,
+        label[for=min-Available-Modify]::after,
+        label[for=min-to-add]::after,
+        label[for=min-Available-add]::after {
+            left: 65px;
+        }
+    }
+    @media(min-width:441px)and(max-width:499px) {
+        label[for=hours-Available-Modify]::after,
+        label[for=hours-to-Modify]::after,
+        label[for=hours-Available-add]::after,
+        label[for=hours-to-add]::after {
+            left: 13px;
+        }
+        label[for=min-to-Modify]::after,
+        label[for=min-Available-Modify]::after,
+        label[for=min-to-add]::after,
+        label[for=min-Available-add]::after {
+            left: 50px;
+        }
+    }
+ 
+    .drop-down-notification {
+        left: 7%;
+    }
+    .drop-down-setting {
+        left: 5%;
+    }
+    @media (min-width:100px) and (max-width: 600px) {
+        .drop-down-setting {
+            left: 3%;
+        }
+    }
+    .bg-active {
+        img {
+            padding-right: 4px;
+        }
+    }
+    .fa-bars {
+        float: right;
+        visibility: hidden;
+        opacity: 0;
+        color: #fff;
+    }
+    @media (max-width:1024px) {
+        .fa-bars {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    nav {
+        float: right;
+    }
+    @media (max-width:1024px) {
+        nav {
+            right: -1000px;
+            padding-right: 10px;
+            background-color:#f8fafa !important;
+
+            .side-nav {
+               background-color:#f8fafa !important;
+
+                right: -1000px;
+                padding-right: 20px;
+            }
+        }
+    }
+    main {
+        float: right;
+    }
+    .login-nav {
+        text-align: left;
+    }
+    .time {
+        left: 0px;
+    }
+    .countNotification {
+        right: -5px;
+    }
+  
+}
+
+nav {
+    width: 20%;
+    height: 100vh;
+    background-color:#f8fafa !important;
+
+    .side-nav {
+     background-color:#f8fafa !important;
+
+        position: fixed;
+        width: 20%;
+        button {
+            background-color: $mainColor;
+            border: none;
+            color: #fff;
+        }
+    }
+}
+
+main {
+    width: 75%;
+    overflow: hidden;
+}
+
+.topNav {
+    background-color: $mainColor;
+    z-index: 9999999;
+    i {
+        cursor: pointer;
+        color: $notificationColor;
+    }
+}
+
+a {
+    color: #f8fafa;
+}
+
+.drName {
+    color: #000 !important;
+}
+
+.nav-links {
+    a {
+        color: $colorFonts;
+        font-size: 17px;
+        font-weight: 400;
+        &:hover {
+            color: $mainColor;
+        }
+    }
+    li {
+        width: 80%;
+        line-height: 40px !important;
+    }
+    i {
+        color: $colorFonts;
+    }
+}
+
+.activeLink {
+    a {
+        color: $mainColor !important;
+    }
+    background-color: #eeeeee;
+    padding: 10px;
+    @include border-radius-all(10px);
+}
+
+ul {
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none;
+}
+
+.fa-sort-down {
+    color: #fff !important;
+}
+
+.Wallet-nav {
+    border-radius: 7px;
+    h5 {
+        color: $colorFonts;
+    }
+    p {
+        color: $mainColor;
+        font-size: 17px;
+        font-weight: 500;
+    }
+}
+
+button {
+    outline: none !important;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.recent-chat {
+    border-radius: 10px;
+    position: relative;
+}
+
+.time {
+    position: absolute;
+    top: 5px;
+    color: #555;
+}
+
+.countNotification {
+    width: 25px;
+    height: 25px;
+    background-color: $notificationColor;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    text-align: center;
+}
+
+.calender {
+    border-radius: 10px;
+    position: relative;
+    #left {
+        position: absolute;
+        top: -40px;
+        left: 0px;
+    }
+    #right {
+        position: absolute;
+        top: -40px;
+        right: 0px;
+    }
+    .activeDay {
+        background-color: $mainColor !important;
+        color: #fff;
+    }
+    .day {
+        background-color: #eeeeee;
+        text-align: center;
+        border-radius: 50%;
+        width: 30px;
+        margin: auto;
+        height: 30px;
+        cursor: pointer;
+    }
+}
+
+.title-doctor {
+    .col-3 {
+        padding: 0px !important;
+    }
+    .drName {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .button-add {
+        background-color: #fff !important;
+        color: $mainColor !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+  
+    nav {
+        float: none;
+        position: fixed;
+        z-index: 999999;
+      background-color:#f8fafa !important;
+
+        width: 45%;
+        .side-nav {
+      background-color:#f8fafa !important;
+
+            position: fixed;
+            z-index: 999999;
+            width: 45%;
+        }
+    }
+
+    main {
+        width: 100%;
+        float: none;
+    }
+    #mainPage {
+        padding: 0 !important;
+    }
+    .chat-media {
+        margin-top: 15px;
+    }
+    .col {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+p {
+    margin-bottom: 0rem;
+}
+
+.owl-carousel {
+    .date {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        width: 65%;
+      background-color:#f8fafa !important;
+
+        .side-nav {
+      background-color:#f8fafa !important;
+
+            width: 65%;
+        }
+    }
+
+}
+.owl-dots {
+    display: none;
+}
+
+.schedule {
+    .col-md-4 {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .item-schedule {
+        @include border-radius-all(10px);
+    }
+    .bg-active {
+        background-color: $mainColor;
+   
+        color: #fff;
+    }
+    .bg-UnActive {
+        background-color: #fff;
+        p {
+            text-align: center;
+        }
+    }
+    @media (max-width:768px) {
+        span {
+            font-size: 12px;
+        }
+    }
+    @media (max-width:767px) {
+       
+        #schedule {
+            span {
+                font-size: 20px ;
+            }
+        }
+    }
+}
+
+
+
+#agenda-popup {
+    .type-agenda {
+        i {
+            color: $mainColor;
+            font-size: 35px;
+        }
+    }
+    .col-2 {
+        -ms-flex: 0 0 12.666667%;
+        flex: 0 0 12.666667%;
+        max-width: 12.666667%;
+    }
+    .agenda-item {
+        @include border-radius-all(10px);
+        position: relative;
+    }
+    .drop-down-agenda {
+        background-color: #edefef;
+        position: absolute;
+        top: 45%;
+        width: 40%;
+        @include border-radius-all(10px);
+        display: none;
+        z-index: 99;
+    }
+    ul {
+        li {
+            line-height: 35px;
+            cursor: pointer;
+            i {
+                background-color: #d8d8d8;
+                color: #fff;
+                padding: 4px;
+                font-size: 14px;
+                border-radius: 50%;
+                /**/
+                cursor: pointer;
+            }
+        }
+    }
+    .dots {
+        position: absolute;
+        top: 20%;
+        cursor: pointer;
+        font-size: 18px;
+        &:hover {
+            color: $mainColor;
+        }
+    }
+}
+
+@media (max-width:800px) {
+    .type-agenda {
+        i {
+            color: $mainColor;
+            font-size: 23px !important;
+        }
+    }
+    .button-add {
+        font-size: 14px;
+    }
+}
+
+#box-close,
+#box-closeReservations {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99999999999999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation-name: transScale;
+    animation-duration: 1.2s;
+    .box-close {
+        width: 40%;
+        background-color: #fff;
+        @include border-radius-all(10px);
+        .title-close {
+            background-color: #555;
+            color: #fff;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        button {
+            border: none;
+        }
+        #sureCancel {
+            color: $mainColor;
+            background-color: #fff;
+            border-radius: 7px;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+        #back,
+        #backReservations {
+            border-radius: 7px;
+            background-color: $mainColor;
+            color: #fff;
+        }
+    }
+}
+
+@keyframes transScale {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#box-Add,
+#box-time {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99999999999999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation-name: transScale;
+    animation-duration: 1.2s;
+}
+
+.box-chose-time {
+    background-color: #fff;
+    width: 50%;
+    border-radius: 10px;
+    .title-close {
+        background-color: #555;
+        color: #fff;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .col-8,
+    .col-4 {
+        padding: 0 !important;
+    }
+}
+
+.radio-custom {
+    opacity: 0;
+    position: absolute;
+    outline: none !important;
+}
+
+input[type='radio'] {
+    outline: none !important;
+}
+
+.radio-custom-label {
+    position: relative;
+    padding: 5px;
+}
+
+.radio-custom+.radio-custom-label:before {
+    font-family: "Font Awesome 5 Free";
+    content: "";
+    font-size: 10px;
+    background: #fff;
+    border: 2px solid #ddd;
+    width: 20px;
+    height: 20px;
+    padding: 4px 8px;
+    margin-right: 10px;
+}
+
+.radio-custom+.radio-custom-label:before {
+    border-radius: 50%;
+}
+
+.radio-custom:checked+.radio-custom-label:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 10px;
+    content: "\f00c";
+    color: #fff;
+    width: 20px;
+    padding: 5px;
+    height: 20px;
+    background-color: $mainColor;
+}
+
+@media (min-width:800px)and (max-width:1024px) {
+    .box-chose-time {
+        width: 65% !important;
+    }
+}
+
+@media (min-width:400px)and (max-width:800px) {
+    .box-chose-time {
+        width: 85% !important;
+    }
+}
+
+@media (min-width:320px)and (max-width:400px) {
+    .box-chose-time {
+        width: 95% !important;
+    }
+}
+
+@media (max-width:100px)and (max-width:320px) {
+    .box-chose-time {
+        width: 100% !important;
+    }
+}
+
+#modify-button,
+#AddButton {
+    background-color: $mainColor;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 45px;
+}
+
+.fa-circle {
+    color: #444;
+    font-size: 8px;
+}
+
+.item-Reservation {
+    border-radius: 10px;
+    span {
+        display: inline-block;
+    }
+    .col-3 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+    .col-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 45.666667%;
+        max-width: 54.666667%;
+    }
+    .call {
+        border-radius: 10px;
+        border: none;
+        color: #fff;
+        width: 40%;
+        i {
+            font-size: 10;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+    }
+    .call-tody {
+        background-color: $mainColor;
+    }
+    .call-future {
+        background-color: #c1c1c1;
+    }
+    .fa-times {
+        color: $mainColor;
+        background-color: rgba(47, 158, 172, 0.26);
+        padding: 5px;
+        font-size: 10px;
+        border-radius: 50%;
+    }
+    .cancel {
+        border-radius: 10px;
+        border: none;
+        color: $mainColor;
+        margin-left: 5px;
+        width: 50%;
+        margin-left: 3%;
+        margin-right: 3%;
+        /**/
+    }
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+/* agend */
+
+label[for=hours-Available-Modify] select,
+label[for=min-to-Modify] select,
+label[for=min-Available-Modify] select,
+label[for=hours-to-Modify] select,
+label[for=hours-Available-add] select,
+label[for=min-to-add] select,
+label[for=min-Available-add] select,
+label[for=hours-to-add] select {
+    position: relative;
+    display: block;
+    width: 200%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+label[for=hours-Available-Modify]::after,
+label[for=min-to-Modify]::after,
+label[for=min-Available-Modify]::after,
+label[for=hours-to-Modify]::after,
+label[for=hours-Available-add]::after,
+label[for=min-to-add]::after,
+label[for=min-Available-add]::after,
+label[for=hours-to-add]::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    content: '\f0d7';
+    position: absolute;
+    top: 5px;
+    width: 40px;
+    height: 80px;
+    z-index: 999;
+    display: block;
+    color: $mainColor;
+    pointer-events: none;
+}
+
+label[for=hours-Available-Modify] select,
+label[for=min-to-Modify] select,
+label[for=min-Available-Modify] select,
+label[for=hours-to-Modify] select,
+label[for=hours-Available-add] select,
+label[for=min-to-add] select,
+label[for=min-Available-add] select,
+label[for=hours-to-add] select {
+    border: none;
+    background: transparent;
+    padding: 7px 20px 7px 20px;
+    width: 200%;
+    font-size: 16px;
+    border: 2px solid $colorFonts;
+    border-radius: 10px;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+label[for=hours-to-Modify] select::-ms-expand,
+label[for=min-Available-Modify] select::-ms-expand,
+label[for=min-to-Modify] select::-ms-expand,
+label[for=hours-Available-Modify] select::-ms-expand,
+label[for=hours-to-add] select::-ms-expand,
+label[for=min-Available-add] select::-ms-expand,
+label[for=min-to-add] select::-ms-expand,
+label[for=hours-Available-add] select::-ms-expand {
+    display: none;
+}
+
+label[for=hours-to-Modify] :-moz-any(select),
+label[for=min-Available-Modify] :-moz-any(select),
+label[for=min-to-Modify] :-moz-any(select),
+label[for=hours-Available-Modify] :-moz-any(select),
+label[for=hours-to-add] :-moz-any(select),
+label[for=min-Available-add] :-moz-any(select),
+label[for=min-to-add] :-moz-any(select),
+label[for=hours-Available-add] :-moz-any(select) {
+    width: 200%;
+}
+
+label[for=hours-Available-Modify] select,
+label[for=min-to-Modify] select,
+label[for=min-Available-Modify] select,
+label[for=hours-to-Modify] select,
+label[for=hours-Available-add] select,
+label[for=min-to-add] select,
+label[for=min-Available-add] select,
+label[for=hours-to-add] select {
+    width: 200%;
+    outline: none;
+}
+
+button {
+    border: none;
+}
+
+.view-reb {
+    color: $mainColor !important;
+    border-radius: 5px;
+}
+
+.Add-Map,
+.rate {
+    width: 47%;
+    border-radius: 8px;
+}
+
+.rate {
+    color: $mainColor;
+}
+
+.Add-Map {
+    font-size: 13px;
+    padding-top: 13px !important;
+    padding-bottom: 13px !important;
+    background-color: $mainColor;
+    color: #fff;
+}
+
+@media (max-width:800px) {
+    .Add-Map {
+        font-size: 10px;
+    }
+}
+
+#back-rate {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99999999999999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation-name: transScale;
+    animation-duration: 1.2s;
+    .box-rate {
+        width: 50%;
+        background-color: $backGroundColor;
+        border-radius: 10px;
+        transform: scale(0.7);
+        p {
+            color: $mainColor;
+            font-size: 30px;
+        }
+    }
+    input[type='radio'] {
+        width: 25px;
+        height: 25px;
+        position: relative;
+        top: 5px;
+    }
+    .rate-chose {
+        .rate-chose-item {
+            text-align: center;
+        }
+        cursor: pointer;
+        i {
+            color: $mainColor;
+            font-size: 35px;
+        }
+    }
+    .rateNotChose {
+        transform: scale(0.5);
+        position: relative;
+        top: -40px;
+    }
+    .rate-chose-item {
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rate-active {
+        transform: scale(1.1);
+    }
+    textarea {
+        border: none;
+        color: #000;
+        resize: none;
+        background-color: #eeeeee;
+        border-radius: 15px;
+        outline: none;
+    }
+    textarea::placeholder {
+        text-align: center;
+    }
+}
+
+.descriptionChose {
+    display: none;
+}
+
+.submit {
+    background-color: $mainColor;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.inputGroup {
+    display: block;
+    position: relative;
+    height: 80%;
+    label {
+        width: 100%;
+        display: block;
+        padding: 30px 0px 20px 100px;
+        color: $mainColor;
+        cursor: pointer;
+        position: relative;
+        text-align: center !important;
+        z-index: 2;
+        font-size: 20px;
+        font-weight: 700;
+        transition: color 200ms ease-in;
+        overflow: hidden;
+        background-color: #fff;
+        border-radius: 15px;
+        height: 100%;
+        &:before {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            content: '';
+            background-color: $mainColor;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) scale3d(1, 1, 1);
+            transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+            opacity: 0;
+            z-index: -1;
+            border-radius: 15px;
+        }
+        &:after {
+            width: 32px;
+            height: 32px;
+            content: '';
+            border: 2px solid #D1D7DC;
+            background-color: #fff;
+            border-radius: 50%;
+            z-index: 2;
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            transition: all 200ms ease-in;
+        }
+    }
+    input:checked~label {
+        color: #fff;
+        &:before {
+            transform: translate(-50%, -50%) scale3d(56, 56, 1);
+            opacity: 1;
+        }
+        &:after {
+            background-color: #fff;
+            border-color: #fff;
+        }
+    }
+    input {
+        width: 32px;
+        height: 32px;
+        order: 1;
+        z-index: 2;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        visibility: hidden;
+        border-radius: 15px;
+    }
+}
+
+#med {
+    textarea {
+        border: none;
+        background-color: #fff;
+        resize: none;
+        border-radius: 10px;
+        padding: 5px 10px;
+    }
+    textarea::placeholder {
+        padding: 5px;
+    }
+    #send,
+    #addMedical {
+        background-color: $mainColor;
+        color: #fff;
+    }
+    #addMedical {
+        border-radius: 5px;
+    }
+    input {
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    input::placeholder {
+        text-align: center;
+    }
+    .item-medical {
+        color: $mainColor;
+    }
+}
+
+input,
+textarea {
+    outline: none !important;
+}
+
+.chat-box {
+    height: 450px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+#stylescrollbar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+#stylescrollbar::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+#stylescrollbar::-webkit-scrollbar-thumb {
+    background-color: $mainColor;
+    border: none;
+}
+
+.response {
+    margin-left: auto;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.request {
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #b0dfe6;
+    &::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 10px;
+        content: '\f00c';
+        position: absolute;
+        bottom: 5%;
+        left: 95%;
+        color: #309ead;
+    }
+}
+
+.message {
+    position: relative;
+}
+
+.time-message {
+    color: #444;
+    font-size: 10px;
+    padding: 4px;
+}
+
+#items-button-chat {
+    input {
+        border: none;
+        background-color: #eee;
+    }
+    input::placeholder {
+        padding: 8px;
+    }
+}
+
+.button-chat {
+    background-color: $mainColor;
+    color: #fff;
+    i {
+        font-size: 22px;
+    }
+}
+
+#endChat {
+    background-color: $mainColor;
+    color: #fff;
+    font-size: 15px;
+}
+
+#boxEndChat {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99999999999999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation-name: transScale;
+    animation-duration: 1.2s;
+    .box-end-chat {
+        width: 40%;
+        background-color: #fff;
+        @include border-radius-all(10px);
+        .title-close {
+            background-color: #555;
+            color: #fff;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        button {
+            border: none;
+        }
+        #sureEnd {
+            color: $mainColor;
+            background-color: #fff;
+            border-radius: 7px;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+        #back,
+        #backChat {
+            border-radius: 7px;
+            background-color: $mainColor;
+            color: #fff;
+        }
+    }
+}
+
+.active-wallet {
+    background-color: $mainColor;
+    color: #fff;
+}
+
+#wallet .owl-prev,
+#wallet .owl-next,
+#nextWallet,
+#prevWallet {
+    background-color: #fff;
+    color: $mainColor;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    &:hover {
+        color: #fff;
+        background-color: $mainColor;
+    }
+}
+
+#wallet .owl-prev {
+    position: relative;
+    top: -45px;
+    z-index: 888;
+}
+
+#wallet .owl-next {
+    position: relative;
+    top: -74px;
+    z-index: 888;
+}
+
+.days-wallet {
+    color: $mainColor;
+    i {
+        color: $mainColor;
+    }
+    h6 {
+        margin-bottom: 10px;
+    }
+}
+
+#all-wallet {
+    border-radius: 10px;
+    .item {
+        outline: none;
+    }
+}
+
+.theBlock {
+    border-radius: 10px;
+    outline: none;
+    i {
+        color: $colorFonts;
+    }
+}
+
+@media (min-width:767px) and (max-width: 768px) {
+    .box-close {
+        width: 75% !important;
+    }
+    #endChat {
+        font-size: 12px;
+    }
+}
+
+@media (min-width:320px) and (max-width: 767px) {
+    .box-close {
+        width: 80% !important;
+    }
+    #endChat {
+        font-size: 9px;
+    }
+}
+
+@media (min-width:100px) and (max-width: 320px) {
+    .box-close {
+        width: 90% !important;
+    }
+}
+
+@media (min-width:100px) and (max-width: 360px) {
+    .item-Reservation .cancel {
+        font-size: 10px !important;
+    }
+    .item-Reservation .call {
+        font-size: 10px !important;
+    }
+    label[for=status-Reservation] {
+        select {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (min-width:100px)and(max-width:320px) {
+    label[for=hours-Available-Modify] select,
+    label[for=min-to-Modify] select,
+    label[for=min-Available-Modify] select,
+    label[for=hours-to-Modify] select,
+    label[for=hours-Available-add] select,
+    label[for=min-to-add] select,
+    label[for=min-Available-add] select,
+    label[for=hours-to-add] select {
+        width: 175%;
+        outline: none;
+    }
+}
+
+@media(max-width:420px) {
+    #items-button-chat {
+        .col-10 {
+            -ms-flex: 0 0 80.333333%;
+            flex: 0 0 80.333333%;
+            max-width: 80.333333%;
+        }
+    }
+}
+
+#Reservation {
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        outline: 0;
+        box-shadow: none;
+        border: 0 !important;
+        background: #eee;
+        background-image: none;
+    }
+    select::-ms-expand {
+        display: none;
+    }
+    .select {
+        position: relative;
+        display: flex;
+        color: #000;
+        width: 70%;
+        line-height: 3;
+        background: #eee;
+        overflow: hidden;
+        border-radius: 50px;
+    }
+    option {
+        border-radius: 50px !important;
+    }
+    select {
+        flex: 1;
+        padding: 0 .5em;
+        cursor: pointer;
+        border: none !important;
+        width: 90%;
+        border-radius: 50px !important;
+    }
+    /* Arrow */
+    .select::after {
+        font-family: "Font Awesome 5 Free";
+        font-size: 15px;
+        font-weight: 900;
+        content: '\f078';
+        position: absolute;
+        top: 0;
+        padding: 0 1em;
+        color: #000;
+        background: #eee;
+        cursor: pointer;
+        pointer-events: none;
+        -webkit-transition: .25s all ease;
+        -o-transition: .25s all ease;
+        transition: .25s all ease;
+    }
+}
+
+.profile {
+    color: #555;
+}
+
+.lastes-reviews {
+    position: relative;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.edit-profile-doctor {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    a {
+        color: #555 !important;
+        font-size: 14px;
+    }
+    position: absolute;
+    top: 0;
+}
+
+.docor-our {
+    ul li,
+    p,
+    i {
+        font-size: 14px;
+        color: #888;
+    }
+}
+
+.select-sim {
+    width: 100px;
+    height: 30px;
+    line-height: 22px;
+    vertical-align: middle;
+    position: relative;
+    background: white;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    img {
+        height: 20px;
+        height: 20px;
+    }
+}
+
+.select-sim::after {
+    content: "▼";
+    font-size: 0.5em;
+    font-family: arial;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translate(0, -50%);
+}
+
+.select-sim:hover::after {
+    content: "";
+}
+
+.select-sim:hover {
+    overflow: visible;
+}
+
+.select-sim:hover .options .option label {
+    display: inline-block;
+}
+
+.select-sim:hover .options {
+    background: white;
+    border: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 101%;
+    height: 100px;
+    overflow-y: scroll;
+}
+
+.select-sim .options .option {
+    overflow: hidden;
+}
+
+.select-sim:hover .options .option {
+    height: 22px;
+    overflow: hidden;
+}
+
+.select-sim .options .option img {
+    vertical-align: middle;
+}
+
+.select-sim .options .option label {
+    display: none;
+}
+
+.select-sim .options .option input {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: inline-block;
+    /* fix specific for Firefox */
+    position: absolute;
+    left: -10000px;
+}
+
+.select-sim .options .option input:checked+label {
+    display: block;
+    width: 100%;
+}
+
+.select-sim:hover .options .option input+label {
+    display: block;
+}
+
+.select-sim:hover .options .option input:checked+label {
+    background: #fffff0;
+}
+
+.shadow {
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, .1)!important;
+}
+
+.border-radius-all {
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.wrapper-upload {
+    cursor: pointer !important;
+    .file-upload {
+        border-radius: 5px;
+        position: relative;
+        text-align: center;
+        border: 2px solid #dbdcdc;
+        overflow: hidden;
+        color: #555;
+        transition: all 1s;
+        cursor: pointer !important;
+        input[type='file'] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            cursor: pointer !important;
+        }
+    }
+}
+
+#flatpickr {
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: $mainColor;
+    &::placeholder {
+        text-align: center;
+        color: $mainColor;
+    }
+}
+
+.flatpickr-day {
+    text-align: center;
+}
+
+#edit-profile {
+    .text-inp,
+    .email-inp {
+        border: none;
+        background-color: transparent;
+        border-bottom: 2px solid #eee;
+    }
+    textarea {
+        resize: none;
+        border: none;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+}
+
+#save {
+    button {
+        background-color: $mainColor;
+        color: #fff;
+    }
+}
+
+#gender {
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        outline: 0;
+        box-shadow: none;
+        border: 0 !important;
+        background: #fff;
+        background-image: none;
+        padding: 0px 0px 0px 20px;
+    }
+    select::-ms-expand {
+        display: none;
+    }
+    .select {
+        position: relative;
+        display: flex;
+        color: $mainColor;
+        width: 50%;
+        line-height: 3;
+        background: #fff;
+        overflow: hidden;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    option {
+        border-radius: 10px !important;
+        -webkit-border-radius: 10px !important;
+        -moz-border-radius: 10px !important;
+        -ms-border-radius: 10px !important;
+        -o-border-radius: 10px !important;
+        color: $mainColor;
+    }
+    select {
+        flex: 1;
+        cursor: pointer;
+        border: none !important;
+        width: 50%;
+        color: $mainColor;
+        border-radius: 50px !important;
+    }
+    /* Arrow */
+    .select::after {
+        font-family: "Font Awesome 5 Free";
+        font-size: 15px;
+        font-weight: 900;
+        content: '\f078';
+        position: absolute;
+        top: 0;
+        padding: 0px 8px;
+        color: $mainColor;
+        background: #fff;
+        cursor: pointer;
+        pointer-events: none;
+        -webkit-transition: .25s all ease;
+        -o-transition: .25s all ease;
+        transition: .25s all ease;
+    }
+}
+
+.flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange,
+.flatpickr-day.selected.inRange,
+.flatpickr-day.startRange.inRange,
+.flatpickr-day.endRange.inRange,
+.flatpickr-day.selected:focus,
+.flatpickr-day.startRange:focus,
+.flatpickr-day.endRange:focus,
+.flatpickr-day.selected:hover,
+.flatpickr-day.startRange:hover,
+.flatpickr-day.endRange:hover,
+.flatpickr-day.selected.prevMonthDay,
+.flatpickr-day.startRange.prevMonthDay,
+.flatpickr-day.endRange.prevMonthDay,
+.flatpickr-day.selected.nextMonthDay,
+.flatpickr-day.startRange.nextMonthDay,
+.flatpickr-day.endRange.nextMonthDay {
+    background: $mainColor;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    border-color: $mainColor;
+}
+
+.change {
+    cursor: pointer;
+}
+
+@media (min-width:600px) and (max-width: 768px) {
+    .change {
+        font-size: 13px;
+    }
+}
+
+.item-dr {
+    width: 5%;
+}
+
+.item-inp {
+    width: 93%;
+}
+
+#box-password-change,
+#box-phone-change {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99999999999999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation-name: transScale;
+    animation-duration: 1.2s;
+    .small-box {
+        background-color: #fff;
+        width: 30%;
+        border-radius: 10px;
+        p {
+            font-size: 20px;
+            font-weight: 500;
+            color: $mainColor;
+        }
+    }
+    input {
+        border: none;
+        background-color: #eee;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #save-change-pass {
+        color: #fff;
+        background-color: $mainColor;
+    }
+}
+
+@media (min-width:768px)and(max-width:800px) {
+    #box-password-change {
+        .small-box {
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width:320px)and(max-width:767px) {
+    #box-password-change {
+        .small-box {
+            width: 80%;
+        }
+    }
+}
+
+.field-icon {
+    margin-top: -23px;
+    position: relative;
+    z-index: 2;
+    font-size: 12px;
+    color: $mainColor;
+}
+
+#country {
+    width: 50px;
+    height: 30px;
+}
+
+.flag {
+    width: 30px;
+    height: 30px;
+}
+
+.dd-selected-text,
+.dd-option-text {
+    line-height: 0px !important;
+}
+
+.dd-selected-image,
+.dd-option-image {
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.dd-selected {
+    padding: 5px 0px 0px 5px !important;
+    height: 30px;
+    font-size: 15px !important;
+}
+
+.dd-select {
+    border-radius: 50px !important;
+    -webkit-border-radius: 50px !important;
+    -moz-border-radius: 50px !important;
+    -ms-border-radius: 50px !important;
+    -o-border-radius: 50px !important;
+    font-size: 15px !important;
+}
+
+button {
+    color: #fff;
+    background: $mainColor;
+}
+
+#save-number {
+    display: none;
+}
+
+#verity {
+    display: none;
+}
+
+@media (min-width:768px)and(max-width:800px) {
+    #box-phone-change {
+        .small-box {
+            width: 60%;
+        }
+    }
+}
+
+@media (min-width:100px)and(max-width:767px) {
+    #box-phone-change {
+        .small-box {
+            width: 90%;
+        }
+    }
+}
+
+@media (min-width:100px)and(max-width:320px) {
+    #box-phone-change {
+        .small-box {
+            width: 98%;
+        }
+    }
+}
+
+.dd-pointer {
+    display: none !important;
+}
+
+.w-80 {
+    width: 95%;
+}
+
+@media (min-width:767px) and (max-width: 768px) {
+    .box-rate {
+        width: 70% !important;
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (min-width:100px) and (max-width: 767px) {
+    .box-rate {
+        width: 100% !important;
+        p {
+            font-size: 20px;
+        }
+    }
+    .inputGroup label:after {
+        left: 5px;
+    }
+    #back-rate .rate-chose-item {
+        height: 70px;
+        width: 70px;
+    }
+    #back-rate .box-rate p {
+        font-size: 25px;
+    }
+    .inputGroup label {
+        padding: 1px 0px 10px 45px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width:768px)and(max-width:1024px) {
+    .inputGroup label {
+        padding: 1px 0px 0px 55px;
+    }
+    .inputGroup label:after {
+        left: 5px;
+    }
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    z-index: 999;
+    display: inline-block;
+}
+
+.btn {
+    border: none;
+    color: #fff !important;
+    border-radius: 50%;
+    font-size: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    z-index: 999;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.upload-btn-wrapper input[type=file] {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    outline: none !important;
+}
+
+@media (max-width:1024px) {
+    .drop-down-notification {
+        .item-notification {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media (min-width:768px)and(max-width:800px) {
+    .box-end-chat {
+        width: 50% !important;
+    }
+}
+
+@media (min-width:320px)and(max-width:767px) {
+    .box-end-chat {
+        width: 80% !important;
+    }
+}
+@media (min-width: 576px) {
+     .container-cusom {
+         max-width: 600px;
+     }
+ }
+ 
+ @media (min-width: 768px) {
+     .container-cusom {
+         max-width: 750px;
+     }
+ }
+ 
+ @media (min-width: 992px) {
+     .container-cusom {
+         max-width: 1000px;
+     }
+ }
+ 
+ @media (min-width: 1200px) {
+     .container-cusom {
+         max-width: 1240px;
+     }
+ }
+ 
+ .box-video-call {
+     background-color: #999;
+     height: 98vh;
+     position: relative;
+     border-radius: 10px;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+ }
+ 
+ .microphone,
+ .video-slash {
+     background-color: #fff;
+ }
+ 
+ .phone-slash {
+     background-color: #e63838;
+     i {
+         color: #fff !important;
+     }
+ }
+ 
+ .microphone,
+ .video-slash,
+ .phone-slash {
+     border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+     padding: 5px;
+     margin: 10px;
+     i {
+         color: $colorFonts;
+         cursor: pointer;
+     }
+ }
+ 
+ .phone-slash {
+     transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ 
+ .fa-facebook {
+     color: #4267b2 !important;
+ }
+ 
+ .fa-twitter {
+     color: #1ca0f1 !important;
+ }
+ 
+ .fa-linkedin-in {
+     color: #1078b2 !important;
+ }
+ 
+ .fa-instagram {
+     color: #ba56b9 !important;
+ }
+ 
+ .fa-youtube {
+     color: #fe1515 !important;
+ }
+ 
+ .icon {
+     li {
+         display: inline-block;
+         i {
+             font-size: 24px;
+         }
+     }
+ }
+ 
+ ul {
+     padding: 0 !important;
+ }
+ 
+ .store {
+     color: #000 !important;
+     i {
+         font-size: 25px;
+     }
+ }
+ 
+ #img-change {
+     animation-name: imgchange;
+     animation-duration: 20s;
+     animation-iteration-count: infinite;
+     width: 100%;
+     height: 400px;
+     background-image: url(assets/img/1.png);
+     background-size: cover;
+     background-position: center center;
+ }
+ 
+ @keyframes imgchange {
+     0% {
+         background-image: url(../img/1.png);
+     }
+     65% {
+         background-image: url(../img/2.png);
+     }
+     100% {
+         background-image: url(../img/3.png);
+     }
+ }
+ 
+ #sign {
+     p {
+         color: $mainColor;
+     }
+ }
+ 
+ .sign-p:not(:first-of-type) {
+     display: none;
+ }
+ 
+ .sign-in-form-one {
+     h1 {
+         color: $mainColor;
+     }
+ }
+ 
+ #p-sign-1 {
+     width: 65%;
+ }
+ 
+ #p-sign-1::after {
+     animation-name: contentChange;
+     content: "";
+     animation-duration: 10s;
+     animation-iteration-count: infinite;
+ }
+ 
+ @keyframes contentChange {
+     0% {
+         content: "the first mobile app in Egypt that let your patients contact  you easily";
+     }
+     65% {
+         content: "ELBATO is honred to have you in out team easy step to sign up and join  ELBATO";
+     }
+     100% {
+         content: "ELBATO  helps you to optimize your time by providing online consultaion and chat";
+     }
+ }
+ 
+ .sign-in-form-one {
+     h1,
+     p {
+         position: relative;
+         top: -20px;
+         font-size: 30px;
+         font-weight: 700;
+     }
+     p {
+         color: $colorFonts !important;
+         font-size: 22px;
+         font-weight: 700;
+     }
+ }
+ 
+ .sign-in-form-three {
+     p {
+         color: $colorFonts !important;
+         font-size: 22px;
+         font-weight: 700;
+     }
+ }
+ 
+ @media (max-width:900px) {
+     .sign-in-form-one {
+         h1 {
+             position: relative;
+             top: 0px;
+         }
+     }
+ }
+ 
+ .file-upload {
+     #imageUpload {
+         cursor: pointer;
+     }
+ }
+ 
+
+ 
+ .sign-form {
+     input,
+     select {
+         padding-top: 5px;
+         padding-bottom: 5px;
+         border: none;
+         background-color: #eee;
+         border-radius: 5px;
+         -webkit-border-radius: 5px;
+         -moz-border-radius: 5px;
+         -ms-border-radius: 5px;
+         -o-border-radius: 5px;
+     }
+     
+     select {
+         text-align-last: center;
+     }
+ }
+ 
+ .signBack {
+     color: $mainColor !important;
+ }
+ 
+ .pleftright {
+     padding-left: 50px;
+     padding-right: 50px;
+ }
+ 
+ @media (max-width: 768px) {
+     #p-sign-1 {
+         width: 100% !important;
+     }
+ }
+ 
+ .ptop {
+     padding-top: 30px;
+ }
+ 
+ @media (max-width: 767px) {
+     .pleftright {
+         padding-left: 15px;
+         padding-right: 15px;
+     }
+     .ptop {
+         padding-top: 10px;
+     }
+ }
+ 
+ @media (max-width: 1024px) {
+     .upimg-w {
+         -webkit-box-flex: 0;
+         flex: 0 0 100%;
+         max-width: 100%;
+     }
+     .store-layout {
+         -webkit-box-flex: 0;
+         flex: 0 0 90%;
+         max-width: 90%;
+     }
+ }
+ 
+ .img-logo {
+     width: 10%;
+ }
+ 
+ .color-default {
+     color: #777 !important;
+ }
+ 
+ .title-ELBATO {
+     color: $mainColor !important;
+     font-size: 32px;
+     font-weight: 800;
+ }
+ 
+ #flatpickr-birthdate {
+     border: none;
+     border-radius: 10px;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+     background-color: #fff !important;
+     color: $mainColor;
+     &::placeholder {
+         text-align: center;
+         color: $mainColor;
+     }
+ }
+ 
+ .chose-select {
+     select {
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         -ms-appearance: none;
+         appearance: none;
+         outline: 0;
+         box-shadow: none;
+         border: 0 !important;
+         background: #fff;
+         background-image: none;
+         padding: 0px 0px 0px 20px;
+     }
+     select::-ms-expand {
+         display: none;
+     }
+     .select {
+         position: relative;
+         display: flex;
+         color: $mainColor;
+         width: 50%;
+         line-height: 3;
+         background: #fff;
+         overflow: hidden;
+         border-radius: 10px;
+         -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+         -ms-border-radius: 10px;
+         -o-border-radius: 10px;
+     }
+     option {
+         border-radius: 10px !important;
+         -webkit-border-radius: 10px !important;
+         -moz-border-radius: 10px !important;
+         -ms-border-radius: 10px !important;
+         -o-border-radius: 10px !important;
+         color: $mainColor;
+     }
+     select {
+         flex: 1;
+         cursor: pointer;
+         border: none !important;
+         width: 50%;
+         color: $mainColor;
+         border-radius: 50px !important;
+     }
+     /* Arrow */
+     .select::after {
+         font-family: "Font Awesome 5 Free";
+         font-size: 15px;
+         font-weight: 900;
+         content: '\f0dd';
+         position: absolute;
+         top: 0;
+         padding: 0px 8px;
+         color: $mainColor;
+         background: #fff;
+         cursor: pointer;
+         pointer-events: none;
+         -webkit-transition: .25s all ease;
+         -o-transition: .25s all ease;
+         transition: .25s all ease;
+     }
+ }
+ 
+ .time-Reservation {
+     font-size: 14px;
+     top: 1% !important;
+ }
+ 
+ .notafaction-item {
+     position: relative;
+     .notafaction {
+         position: absolute;
+         top: 0;
+         color: #fff;
+         background-color: $notificationColor;
+         height: 20px;
+         width: 20px;
+         font-size: 14px;
+         border-radius: 50%;
+         -webkit-border-radius: 50%;
+         -moz-border-radius: 50%;
+         -ms-border-radius: 50%;
+         -o-border-radius: 50%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+ }
+ 
+ .chat-inbox {
+     color: #000 !important;
+     text-decoration: none !important;
+ }
+ 
+ .popup-chat {
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     display: none;
+     background-color: rgba(0, 0, 0, 0.5);
+     z-index: 9999999;
+     justify-content: center;
+     align-items: center;
+     .container-chat {
+         background-color: $backGroundColor;
+         border-radius: 10px;
+         -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+         -ms-border-radius: 10px;
+         -o-border-radius: 10px;
+     }
+     .row {
+         margin-right: 0px;
+         margin-left: 0px;
+     }
+ }
+ 
+ @media (max-width:767px) {
+     .Online-consultation {
+         font-size: 11px;
+     }
+ }
+ 
+ .img-video {
+     height: 50px;
+     width: 50px;
+ }
+ 
+ .title-video-user {
+     span {
+         color: #fff;
+     }
+ }
+ 
+ .video-button {
+     li {
+         height: 40px;
+         width: 40px;
+         display: inline-block;
+     }
+ }
+ 
+ .box-option {
+     position: absolute;
+     top: 85%;
+ }
+ 
+ .box-another {
+     background-color: #000;
+     height: 30vh;
+     width: 25%;
+     position: absolute;
+     bottom: 0%;
+ }
+ 
+ .button-video {
+     text-align: center;
+     i {
+         margin-top: 5px;
+     }
+ }
+ 
+ @media (max-width:375px) {
+     .video-button {
+         li {
+             display: block;
+         }
+     }
+     .box-option {
+         position: absolute;
+         left: 77%;
+         top: 63%;
+     }
+     .box-another {
+         background-color: #000;
+         height: 30vh;
+         width: 35%;
+     }
+ }
+ 
+ @media (min-width:375px)and(max-width:414px) {
+     .box-another {
+         background-color: #000;
+         height: 25vh;
+         width: 40%;
+     }
+ }
+ 
+ #Reservation {
+     .fa-chevron-down {
+         font-size: 12px;
+         top: 50%;
+     }
+ }
+ 
+ #time-video {
+     background-color: #fff !important;
+     color: $mainColor !important;
+     position: absolute;
+     top: 2%;
+ }
+ 
+ #addcall {
+     display: none;
+     background-color: #f57a84 !important;
+ }
+ 
+ @media (min-width:100px)and(max-width:320px) {
+     .button-add {
+         font-size: 14px !important;
+     }
+     .nav-links {
+         a {
+             font-size: 15px;
+         }
+         li {
+             line-height: 30px !important;
+         }
+     }
+ }
+ 
+ .top-offset {
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background-color: rgba(0, 0, 0, 0.5);
+     z-index: 99;
+     display: none;
+ }
+ 
+ .sign-in-form-two,
+ .sign-in-form-three {
+     display: none
+ }
+.Google-play
+{
+     font-size:15px;
+}
+input[type='text'],input[type='password'],input[type='tel'],input[type='email']
+
+{
+     padding-left: 10px;
+}
+.w-img
+{
+     height:40px;
+     width:40px;
+}
+
+#endChat {
+     background-color: #309ead;
+     color: #fff;
+     font-size: 13px;
+ }
+ @media (max-width: 600px)
+ {
+      #items-button-chat
+      {
+           .col-1{
+               -ms-flex: 0 0 11% !important;
+               flex: 0 0 11% !important;
+               max-width: 11% !important;
+           }
+           .col-10{
+               -ms-flex: 0 0 76% !important;
+               flex: 0 0 76% !important;
+               max-width: 76% !important;
+          }
+      }
+ }
+
+ @media (min-width: 767px)and(max-width: 768px)
+ {
+      #items-button-chat
+      {
+          .col-1{
+               -ms-flex: 0 0 9% !important;
+               flex: 0 0 9% !important;
+               max-width: 9% !important;
+           }
+           .col-10{
+               -ms-flex: 0 0 78% !important;
+               flex: 0 0 78% !important;
+               max-width: 78% !important;
+          }
+         
+      }
+ }
+ @media(min-width:767px)and(max-width:768px) {
+     .item-Reservation .call {
+         width: 48%;
+         font-size: 14px;
+     }
+     .item-Reservation .cancel {
+         font-size: 12px;
+     }
+     .item-Reservation .fa-times {
+         font-size: 7px;
+     }
+ }
+ .state-show {
+     top: 70%;
+     position: absolute;
+ }
+ .notafaction-item {
+     position: relative;
+     .notafaction {
+         position: absolute;
+         top: 0;
+         color: #fff;
+         background-color: $notificationColor;
+         height: 20px;
+         width: 20px;
+         font-size: 14px;
+         border-radius: 50%;
+         -webkit-border-radius: 50%;
+         -moz-border-radius: 50%;
+         -ms-border-radius: 50%;
+         -o-border-radius: 50%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+ }
+ .getEnd {
+a{
+     color: $mainColor !important;
+
+}
+}
+nav {
+    
+      background-color:#f8fafa !important;
+ 
+     .side-nav {
+      background-color:#f8fafa !important;
+
+     }
+ }
+ @media (max-width: 412px) 
+{#endChat {
+    font-size: 11px !important;
+}}
+@media (max-width: 360px) 
+{#endChat {
+    font-size: 9px !important;
+}}
+button {
+     a{
+          color:#fff !important;
+     }
+}
+.box-option {
+     position: absolute;
+     top: 85%;
+     left: 45%;
+ }
+
+ .request::after {
+     left: 97%;
+ }
+ 
+ .button-upload-file {
+     display: flex;
+     justify-content: center;
+ }
+ 
+ @media(max-width:700px) {
+     .request::after {
+         bottom: 3%;
+         left: 91%;
+         font-size: 12px;
+     }
+     .message {
+         p {
+             font-size: 14px;
+         }
+     }
+     .button-upload-file {
+         display: block;
+     }
+ }
+ 
+ @media(min-width:767px)and(max-width:1024px) {
+     .request::after {
+         left: 94%;
+     }
+ }
+ @media (max-width:375px) {
+     .video-button {
+         li {
+             display: block;
+         }
+     }
+     .box-option {
+         position: absolute;
+         left: 77%;
+         top: 63%;
+     }
+     .box-another {
+         background-color: #000;
+         height: 30vh;
+         width: 35%;
+     }
+ }
+ @media(min-width:360px)and (max-width:500px) {
+     .video-button {
+         li {
+             display: block;
+         }
+     }
+     .box-option {
+         position: absolute;
+         top: 65%;
+     }
+     .box-another {
+         background-color: #000;
+         height: 30vh;
+         width: 35%;
+     }
+ }
+ @media (max-width:360px) {
+     .video-button {
+         li {
+             display: block;
+         }
+     }
+     .box-option {
+         position: absolute;
+         top: 55% !important;
+     }
+     .box-another {
+         background-color: #000;
+         height: 30vh;
+         width: 35%;
+     }
+ }
+ .border-10
+ {
+ border-radius: 10px;
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ -ms-border-radius: 10px;
+ -o-border-radius: 10px;
+}
+.total-wallet {
+     border-radius: 10px;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+     h6 {
+         color: $mainColor;
+         font-weight: 700;
+         font-size: 18px;
+     }
+     p {
+         font-size: 14px;
+         font-weight: 500;
+         color: #999;
+     }
+ }
+@media (max-width: 767px) {
+     .total-wallet {
+         p {
+             font-size: 17px;
+         }
+     }
+ }
+ @media (min-width:767px) and (max-width: 768px) {
+     .total-wallet {
+         h6 {
+             font-size: 12px;
+         }
+         p {
+             font-size: 10px;
+             font-weight: 500;
+             color: #999;
+         }
+     }
+     .item-total {
+         h6 {
+             font-size: 13px;
+         }
+     }
+     .item {
+         p {
+             font-size: 14px;
+         }
+     }
+ }
+ @media (max-width: 500px) {
+     .Reservation .fa-chevron-down {
+         position: absolute;
+         left: 75% !important;
+         top: 52% !important;
+     }
+ }
+ @media (max-width: 500px) {
+     .Reservation-past {
+         .fa-chevron-down {
+             position: absolute;
+             left: 65% !important;
+             top: 40% !important;
+         }
+     }}
+     .Reservation-past {
+          .fa-chevron-down {
+              left: 65% !important;
+          }
+          .fa-chevron-down {
+              top: 40% !important;
+          }
+      }
+      .Reservation-past {
+          .fa-chevron-down {
+              right: 65% !important;
+          }
+          .fa-chevron-down {
+              top: 40% !important;
+          }
+      }
+
+      #Reservation {
+          ul {
+              background-color: $colorFonts;
+              border-radius: 30px;
+              -webkit-border-radius: 30px;
+              -moz-border-radius: 30px;
+              -ms-border-radius: 30px;
+              -o-border-radius: 30px;
+              li {
+                  cursor: pointer;
+                  line-height: 30px;
+                  a {
+                      color: #000 !important;
+                      text-decoration: none !important;
+                  }
+              }
+          }
+      }
+      @media (max-width: 500px) {
+          .Reservation-past {
+              .fa-chevron-down {
+                  position: absolute;
+                  left: 65% !important;
+                  top: 40% !important;
+              }
+          }
+          #Reservation ul li {
+              font-size: 14px !important;
+          }
+      }
+      #Reservation {
+          .fa-chevron-down {
+              position: absolute;
+              left: 75%;
+          }
+      }
+      #Reservation {
+          .select::after {
+              right: 0;
+          }
+      }
+      #Reservation {
+          .select::after {
+              left: 0;
+          }
+      }
+      #Reservation {
+          .fa-chevron-down {
+              position: absolute;
+              right: 75%;
+          }
+      }
+      
+#Reservation {
+     select {
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         -ms-appearance: none;
+         appearance: none;
+         outline: 0;
+         box-shadow: none;
+         border: 0 !important;
+         background: #eee;
+         background-image: none;
+     }
+     select::-ms-expand {
+         display: none;
+     }
+     .select {
+         position: relative;
+         display: flex;
+         color: #000;
+         width: 70%;
+         line-height: 3;
+         background: #eee;
+         overflow: hidden;
+         border-radius: 50px;
+     }
+     option {
+         border-radius: 50px !important;
+     }
+     select {
+         flex: 1;
+         padding: 0 .5em;
+         cursor: pointer;
+         border: none !important;
+         width: 90%;
+         border-radius: 50px !important;
+     }
+     /* Arrow */
+     .select::after {
+         font-family: "Font Awesome 5 Free";
+         font-size: 15px;
+         font-weight: 900;
+         content: '\f078';
+         position: absolute;
+         top: 0;
+         padding: 0 1em;
+         color: #000;
+         background: #eee;
+         cursor: pointer;
+         pointer-events: none;
+         -webkit-transition: .25s all ease;
+         -o-transition: .25s all ease;
+         transition: .25s all ease;
+     }
+ }
+ #Reservation {
+     .fa-chevron-down {
+         font-size: 12px;
+         top: 50%;
+     }
+ }
+ .slide-down
+{
+     display: none ;
+}
+#Reservation ul li {
+     text-align: center;
+ }
+ .plate {
+     height: 20px;
+     width: 20px;
+     border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+ }
+ 
+ .plate-name {
+     font-size: 14px;
+ }
+ 
+ .plate-one {
+     background-color: $mainColor !important;
+     color: #fff !important;
+ }
+ 
+ .plate-two {
+     background-color: #eee !important;
+     color: #c1c1c0 !important;
+ }
+ 
+ .plate-three {
+     background-color: $notificationColor !important;
+     color: #fff !important;
+ }
+ 
+ .plate-four {
+     background-color: #888 !important;
+     color: #fff !important;
+ }
+ @media (max-width: 768px)
+ {
+.schedule span {
+    font-size: 12px;
+}}
+.bg-UnActive {
+     .bedge-date {
+         color: #fff;
+         background-color: $mainColor;
+         top: 1%;
+     }
+     span:first-of-type {
+         font-size: 12px;
+     }
+ }
+ @media (min-width:768px)and(max-width:800px) {
+     .bedge-date {
+         font-size: 11px !important;
+         padding-left: 1px;
+         padding-right: 1px;
+     }
+ }
+ .name-Reservation
+{
+     font-size: 13px;
+}
+.img-logo{
+     height: 60px;
+     width: 60px;
+}
+.img-logo2{
+     height: 45px;
+     width: 45px;
+}
+.img-logo3{
+     height: 55px;
+     width: 55px;
+}
+.img-inbox
+{
+     height: 70px;
+     width: 70px;
+}
+@media(min-width:767px)and(max-width:768px)
+{
+     
+     .img-logo2{
+          height: 40px;
+          width: 40px;
+          margin-top: 8px;
+     }
+     .img-logo3{
+          height: 40px;
+          width: 40px;
+          margin-top: 8px;
+     }
+     .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+          margin-bottom: 0rem;
+          font-family: inherit;
+          font-weight: 500;
+          line-height: 0.5;
+          color: inherit;
+      }
+      
+      .schedule span {
+          font-size: 9px;
+      }
+      
+      .img-inbox
+{
+     height: 60px;
+     width: 60px;
+}
+}
+
+@media (max-width: 600px)
+{
+     .img-logo2 {
+          height: 40px;
+          width: 40px;
+          margin-top: 3px;
+      }
+      .img-logo3 {
+          height: 50px;
+          width: 50px;
+          margin-top: 5px;
+      }
+      .img-inbox
+{
+     height: 50px;
+     width: 50px;
+     margin-top: 5px;
+
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+     margin-bottom: 0rem;
+     font-family: inherit;
+     font-weight: 500;
+     line-height: 1.2;
+     color: inherit;
+ }
+}
+.profile
+{
+     .col-2{
+          -ms-flex: 0 0 13%;
+    flex: 0 0 13%;
+    max-width: 13%;
+     }
+}
+.img-profile
+{
+     height: 70px;
+     width: 70px;
+}
+
+.img-logo4
+{
+     height: 70px;
+     width: 70px;
+}
+.item-Reservation
+{
+     .col-3
+     {
+          -ms-flex: 0 0 16%;
+          flex: 0 0 16%;
+          max-width: 16%;
+      }
+      .col-5 {
+          -ms-flex: 0 0 47%;
+          flex: 0 0 47%;
+          max-width: 47%;
+      }
+}
+
+@media (max-width: 600px)
+{
+     .img-profile
+{
+     height: 45px;
+     width: 45px;
+     margin-top: 5px;
+}
+.img-logo4
+{
+     height: 45px;
+     width: 45px;
+}
+}
+.chat-media
+{
+     .item-Reservation
+     {
+          .col-4{
+               span{
+                    font-size: 15px;
+    font-weight: 500;
+               }
+          }
+     }
+}
+
+@media(min-width:767px)and(max-width:768px)
+{
+
+     .img-profile
+     {
+          height: 50px;
+          width: 50px;
+          margin-top: 5px;
+     }
+     .img-logo4
+{
+     height: 50px;
+     width: 50px;
+}
+.chat-media
+{
+     .item-Reservation
+     {
+          .col-4{
+               span{
+                    font-size: 13px;
+    font-weight: 500;
+               }
+          }
+     }
+}
+}
