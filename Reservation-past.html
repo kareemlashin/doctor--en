@@ -24,6 +24,115 @@
 </head>
 
 <body>
+     <div class="top-offset"></div>
+
+     <div id="box-Add">
+         <div class="box-chose-time">
+             <div class="title-close px-2 py-2">
+                 <h6> Add Available Appointment</h6>
+             </div>
+             <div class="container">
+ 
+                 <div class="row">
+                     <div class="col-md-6 pt-3">
+                         <h6>Available From</h6>
+                         <div class="row ">
+                             <div class="col-6">
+                                 <label for="hours-Available-add">
+                                     <select id="hours-Available-add">
+                                         <option value="1pm">1pm</option>
+                                         <option value="2pm">2pm</option>
+                                         <option value="3pm">3pm</option>
+                                         <option value="4pm">4pm</option>
+                                         <option value="5pm">5pm</option>
+                                         <option value="7pm">7pm</option>
+                                         <option value="8pm">8pm</option>
+                                         <option value="9pm">9pm</option>
+                                         <option value="10pm">10pm</option>
+                                     </select>
+                                 </label>
+                             </div>
+                             <div class="col-6">
+                                 <label for="min-Available-add">
+                                     <select id="min-Available-add">
+                                         <option value="1">1</option>
+                                         <option value="2">2</option>
+                                         <option value="3">3</option>
+                                         <option value="4">4</option>
+                                         <option value="5">5</option>
+                                         <option value="7">7</option>
+                                         <option value="8">8</option>
+                                         <option value="9">9</option>
+                                         <option value="10">10</option>
+                                     </select>
+                                 </label>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-md-6 pt-3">
+                         <h6>To</h6>
+ 
+                         <div class="row ">
+                             <div class="col-6">
+                                 <label for="hours-to-add">
+                                     <select id="hours-to-add">
+                                         <option value="1pm">1pm</option>
+                                         <option value="2pm">2pm</option>
+                                         <option value="3pm">3pm</option>
+                                         <option value="4pm">4pm</option>
+                                         <option value="5pm">5pm</option>
+                                         <option value="7pm">7pm</option>
+                                         <option value="8pm">8pm</option>
+                                         <option value="9pm">9pm</option>
+                                         <option value="10pm">10pm</option>
+                                     </select>
+                                 </label>
+                             </div>
+                             <div class="col-6">
+                                 <label for="min-to-add">
+                                     <select id="min-to-add">
+                                         <option value="1">1</option>
+                                         <option value="2">2</option>
+                                         <option value="3">3</option>
+                                         <option value="4">4</option>
+                                         <option value="5">5</option>
+                                         <option value="7">7</option>
+                                         <option value="8">8</option>
+                                         <option value="9">9</option>
+                                         <option value="10">10</option>
+                                     </select>
+                                 </label>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div>
+                     <div class="row ">
+                         <div class="col-4 mx-auto">
+                             <div>
+                                 <input id="OnlineConsultationAdd" value="Online Consultation" class="radio-custom" name="radio-group-modify" type="radio" checked>
+                                 <label for="OnlineConsultationAdd" class="radio-custom-label">
+                                     <span class="mx-2">Online
+                                         consultation</span></label>
+                             </div>
+                         </div>
+                         <div class="col-4 mx-auto">
+                             <div></div>
+                             <input id="ChatAdd" class="radio-custom" value="chat" name="radio-group-modify" type="radio">
+                             <label for="ChatAdd" class="radio-custom-label"><span class="mx-2">Chat
+                                 </span> </label>
+                         </div>
+ 
+                     </div>
+                 </div>
+ 
+             </div>
+             <div class="text-center">
+                 <button id="AddButton" class="my-3 rounded-pill">ADD</button>
+             </div>
+         </div>
+ 
+     </div>
     <div class="drop-down-notification px-3 py-2">
         <div class="item-notification bg-white border my-2 py-2">
             <div class="row ">
@@ -117,10 +226,10 @@
                       <ul>
                           <li><a href="index.html"><i class="fas fa-home px-3"></i> HOME</a></li>
                           <li><a href="agenda.html"><i class="fas fa-book px-3"></i>Agenda</a></li>
-                          <li class="notafaction-item"><a href="Reservation.html"><i class="fas fa-calendar-week px-3"></i>Reservations</a>     
+                          <li class="notafaction-item activeLink"><a href="Reservation.html"><i class="fas fa-calendar-week px-3"></i>Reservations</a>     
                                    <div class="notafaction">2</div>
                           </li>
-                          <li class="p-0 activeLink notafaction-item"><a href="inbox.html"><i class="far fa-comment-dots px-3"></i> inbox</a>           
+                          <li class="p-0  notafaction-item"><a href="inbox.html"><i class="far fa-comment-dots px-3"></i> inbox</a>           
                              <div class="notafaction">2</div>
                           </li>
                           <li><a href="wallet.html"><i class="fas fa-wallet px-3"></i> My wallet</a></li>
@@ -331,7 +440,7 @@
                                       <span class="px-1">kareem lashin</span>
                                   </div>
                                   <div class="col-5 px-0 d-flex align-items-center justify-content-end px-0">
-                                      <button class="py-1 text-center call call-future"><i
+                                      <button class="py-1 text-center call call-future shadow"><i
                                                   class="fas fa-video "></i>call</button>
                                       <button class="bg-white shadow py-1 text-center cancel cancel-box-item"><i
                                                   class="fas fa-times  "></i>cancel</button>
@@ -350,7 +459,7 @@
                                       <span class="px-1">kareem lashin</span>
                                   </div>
                                   <div class="col-5 px-0 d-flex align-items-center justify-content-end px-0">
-                                      <button class="py-1 text-center call call-future"><i
+                                      <button class="py-1 text-center call call-future shadow"><i
                                               class="fas fa-video "></i>call</button>
                                       <button class="bg-white shadow py-1 text-center cancel cancel-box-item"><i
                                               class="fas fa-times  "></i>cancel</button>
@@ -370,7 +479,7 @@
                                   </div>
                                   <div class="col-5 px-0 d-flex align-items-center justify-content-end px-0">
                           
-                                      <button class="py-1 text-center call call-tody ">
+                                      <button class="py-1 text-center call call-tody shadow ">
                                                   <a href="video.html">
                                                       <i
                                                       class="fas fa-video "></i>call

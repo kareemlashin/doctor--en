@@ -26,6 +26,8 @@ s
 </head>
 
 <body>
+     <div class="top-offset"></div>
+
     <div id="box-Add">
         <div class="box-chose-time">
             <div class="title-close px-2 py-2">
@@ -294,7 +296,7 @@ s
                                     <div>
                                         <div>
                                             <label>Birth date</label>
-                                            <input type="text" id="flatpickr" class="py-2 shadow mx-4 text-center" placeholder="pick date"> </div>
+                                            <input type="text" id="flatpickr" class="py-2 shadow mx-3 text-center" placeholder="pick date"> </div>
                                     </div>
                                     <div class=" my-4">
                                         <label for="" class="px-2">About</label>
@@ -357,7 +359,7 @@ s
         <div class="small-box">
             <p class="text-center py-2">Change Your Phone Number</p>
             <div class="row mx-auto my-2">
-                <div class="col-3">
+                <div class="col-4">
                     <select id="demo-htmlselect" style="width: 50px !important;">
                         <option value="0" data-imagesrc="img/flag.png" style="width: 50px !important;" class="p-0 m-0 d-flex justify-content-center align-items-center">+20</option>
                         <option value="0" data-imagesrc="img/Uae.png" style="width: 50px !important;" class="p-0 m-0 d-flex justify-content-center align-items-center">+20</option>
@@ -365,21 +367,20 @@ s
                  
                     </select>
                 </div>
-                <div class="col-9 text-center">
-                    <input type="text" class="py-1 w-100 mx-2 rounded-pill" placeholder="New Number">
+                <div class="col-8 text-center">
+                    <input type="tel" class="py-1 w-100  rounded-pill" placeholder="New Number">
                 </div>
             </div>
-            <div class="row" id="verity">
-                <div class="col-4 my-2 text-center p-0">
-                    <label for="" class="">
-                        Verity code
+            <div class="row mx-auto my-2" id="verity">
+               <div class="col-4 Verity">
+                    Verity code
 
-                    </label>
-                </div>
-                <div class="col-8 text-center ">
-                    <input type="text" class="py-1 w-80 mx-auto  rounded-pill" placeholder="New Number">
-                </div>
-            </div>
+               </div>
+               <div class="col-8 text-center">
+                   <input type="tel" class="py-1 w-100  rounded-pill" placeholder="New Number">
+               </div>
+           </div>
+          
 
             <div class="text-center my-3" id="next-item">
                 <button class="py-2 px-5 rounded-pill">Next</button>

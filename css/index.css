@@ -180,7 +180,7 @@ body {
 
 @media (min-width: 100px) and (max-width: 767px) {
   [dir="ltr"] #wallet .owl-next {
-    left: 85% !important;
+    left: 93% !important;
   }
 }
 
@@ -405,6 +405,20 @@ body {
   left: -5px;
 }
 
+@media (min-width: 1100px) and (max-width: 1444px) {
+  [dir="ltr"] label[for=min-to-Modify]::after, [dir="ltr"] label[for=min-Available-Modify]::after,
+  [dir="ltr"] label[for=min-to-add]::after, [dir="ltr"] label[for=min-Available-add]::after {
+    right: 20px !important;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 360px) {
+  [dir="ltr"] label[for=min-to-Modify]::after, [dir="ltr"] label[for=min-Available-Modify]::after,
+  [dir="ltr"] label[for=min-to-add]::after, [dir="ltr"] label[for=min-Available-add]::after {
+    right: 21px !important;
+  }
+}
+
 .fa-bell {
   font-size: 20px;
   position: relative;
@@ -459,6 +473,20 @@ rtl
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+}
+
+@media (min-width: 1281px) and (max-width: 1444px) {
+  [dir="rtl"] label[for=min-to-Modify]::after, [dir="rtl"] label[for=min-Available-Modify]::after,
+  [dir="rtl"] label[for=min-to-add]::after, [dir="rtl"] label[for=min-Available-add]::after {
+    left: 20px !important;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 360px) {
+  [dir="rtl"] label[for=min-to-Modify]::after, [dir="rtl"] label[for=min-Available-Modify]::after,
+  [dir="rtl"] label[for=min-to-add]::after, [dir="rtl"] label[for=min-Available-add]::after {
+    left: 21px !important;
+  }
 }
 
 [dir="rtl"] .chat-media .item-Reservation .col-3 {
@@ -583,7 +611,7 @@ rtl
 
 @media (min-width: 100px) and (max-width: 767px) {
   [dir="rtl"] #wallet .owl-next {
-    right: 85% !important;
+    right: 93% !important;
   }
 }
 
@@ -845,7 +873,7 @@ nav .side-nav {
 }
 
 nav .side-nav button {
-  background-color: #309ead;
+  background-color: #309ead !important;
   border: none;
   color: #fff;
 }
@@ -894,7 +922,7 @@ a {
 
 .activeLink {
   background-color: #eeeeee;
-  padding: 10px;
+  padding: 5px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -989,6 +1017,9 @@ a {
   margin: auto;
   height: 30px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title-doctor .col-3 {
@@ -1002,8 +1033,7 @@ a {
 
 @media (max-width: 1024px) {
   .button-add {
-    background-color: #fff !important;
-    color: #309ead !important;
+    color: #fff !important;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -2429,8 +2459,8 @@ textarea {
 #box-phone-change input {
   border: none;
   background-color: #eee;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 #box-password-change #save-change-pass,
@@ -3746,5 +3776,30 @@ button a {
   .chat-media .item-Reservation .col-4 span {
     font-size: 13px;
     font-weight: 500;
+  }
+}
+
+.Verity {
+  font-size: 15px;
+  text-align: center !important;
+}
+
+.w-inp {
+  width: 94.5%;
+}
+
+#wallet .item {
+  cursor: pointer;
+}
+
+.p-all {
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+}
+
+@media (max-width: 600px) {
+  #plate-item .p-all {
+    padding-left: 0.1rem !important;
+    padding-right: 0.1rem !important;
   }
 }

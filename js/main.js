@@ -368,4 +368,21 @@ $('.Agenda-calender .day').click(function () {
      $('.day').not(this).removeClass('activeDay');
    
    });
+   $('#wallet .item h6').click(function () {
+     let dayWallet =$(this).attr('day');
+     alert(dayWallet)
+     //
+     $('#wallet .item h6').not(this).removeClass('active-wallet');
+     $(this).addClass('active-wallet');
+
+   
+   });
+   $('#wallet .item ').click(function () {
+  
+     
+     $('#wallet .item ').not(this).removeClass('active-wallet');
+     $(this).addClass('active-wallet');
+
+   
+   });
 })
